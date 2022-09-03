@@ -1,0 +1,58 @@
+html, body {
+    margin: 0;
+    background-color: #FFEAEA;
+    font-family: 'Calibri';
+    font-style: italic;
+}
+.contant {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.task_add {
+    display: flex;
+    align-items: center;
+    margin-top: 150px;
+    margin-bottom: 40px;
+}
+.task_input, .link_input {
+    width: 485px;
+    height: 57px;
+    padding-right: 40px;
+    padding-left: 20px;
+    font-style: italic;
+    font-size: 36px;
+    color: #C88888;
+    background-color: #FFD1D1;
+    box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.25);
+    border: none;
+}
+.task_input::placeholder, .link_input::placeholder {
+    color: #C9A7A7;
+    opacity: 0.6;
+}
+.task_input:focus, .link_input:focus  {
+    outline: none;
+}
+.task_add_icon {
+    position: relative;
+    right: 50px;
+    width: 42px;
+    height: 42px;
+    font-size: 36px;
+    background: #FCABAB;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    border-color: #FCABAB;
+    border: none;
+    cursor: pointer;
+    transition: all linear 0.2s;
+}
+.task_add_icon:hover {
+	background-color: #C88888;
+}
+.task_inputs {
+    display: flex;
+    flex-direction: column;
+}
