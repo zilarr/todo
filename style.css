@@ -16,11 +16,11 @@ html, body {
     margin-top: 150px;
     margin-bottom: 40px;
 }
-.task_input {
+.task_input, .link_input {
     width: 485px;
     height: 57px;
+    padding-right: 40px;
     padding-left: 20px;
-    padding-right: 55px;
     font-style: italic;
     font-size: 36px;
     color: #C88888;
@@ -28,19 +28,19 @@ html, body {
     box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.25);
     border: none;
 }
-.task_input::placeholder {
+.task_input::placeholder, .link_input::placeholder {
     color: #C9A7A7;
     opacity: 0.6;
 }
-.task_input:focus {
+.task_input:focus, .link_input:focus  {
     outline: none;
 }
 .task_add_icon {
+    position: relative;
+    right: 50px;
     width: 42px;
     height: 42px;
     font-size: 36px;
-    position: relative;
-    right: 50px;
     background: #FCABAB;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
     border-radius: 50%;
@@ -51,4 +51,8 @@ html, body {
 }
 .task_add_icon:hover {
 	background-color: #C88888;
+}
+.task_inputs {
+    display: flex;
+    flex-direction: column;
 }
