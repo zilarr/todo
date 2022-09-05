@@ -36,7 +36,7 @@ const itemGenerator = (title, index) => {
     let linkTitle = titleInput.value;
     let link = linkInput.value;
     if ((linkTitle.length > 0) & (link.length > 0)) {
-        taskItem.insertAdjacentHTML('beforebegin', `
+        taskItem.insertAdjacentHTML('afterbegin', `
         <div class="task_item">
             <div class="task_item_desc"><a href='${link}'>${linkTitle}</a></div>  
                 <div class="item_menu">
@@ -54,4 +54,6 @@ function pushItem() {
     links.push(new Link(linkInput.value));
     itemGenerator();
     local();
+    titleInput.value = '';
+    linkInput.value = '';
 }
