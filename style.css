@@ -4,6 +4,13 @@ html, body {
     font-family: 'Calibri';
     font-style: italic;
 }
+a {
+    text-decoration: none;
+    font-style: italic;
+    font-size: 36px;
+    color: #C88888;
+
+}
 .contant {
     display: flex;
     align-items: center;
@@ -49,10 +56,50 @@ html, body {
     cursor: pointer;
     transition: all linear 0.2s;
 }
-.task_add_icon:hover {
+.task_add_icon:hover, .item_edit:hover, .item_del:hover {
 	background-color: #C88888;
 }
 .task_inputs {
     display: flex;
     flex-direction: column;
+}
+.task_item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    width: 740px;
+    height: 80px;
+    background: #FFD1D1;
+}
+.task_item_desc {
+    margin-right: -140px;
+    width: 700px;
+    height: 60px;
+    background: #FFE9E9;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+    padding-top: 10px;
+    padding-left: 20px;
+    font-style: italic;
+    font-size: 36px;
+    color: #C88888;
+}
+.item_menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 14px;
+    gap: 10px;
+}
+.item_edit, .item_del {
+    width: 42px;
+    height: 42px;
+    font-size: 36px;
+    background: #FCABAB;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    border-color: #FCABAB;
+    border: none;
+    cursor: pointer;
+    transition: all linear 0.2s;
 }
