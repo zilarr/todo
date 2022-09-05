@@ -73,7 +73,7 @@ a {
     background: #FFD1D1;
 }
 .task_item_desc {
-    margin-right: -145px;
+    margin-right: -140px;
     width: 700px;
     height: 60px;
     background: #FFE9E9;
@@ -91,9 +91,6 @@ a {
     padding-right: 14px;
     gap: 10px;
 }
-.item_complete {
-
-}
 .item_edit, .item_del {
     width: 42px;
     height: 42px;
@@ -105,18 +102,4 @@ a {
     border: none;
     cursor: pointer;
     transition: all linear 0.2s;
-}
-input[type=checkbox] {
-    content: " ";
-    color: #FCABAB;
-    display: inline-block;
-    border: 1px solid #ccc;
-    height: 30px;
-    width: 30px;
-    transition: color ease .3s;
-}
-
-input[type=checkbox]:checked {
-    color: #000;
-  border-color: #000;
 }

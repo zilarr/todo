@@ -30,12 +30,22 @@ const local = () => {
     localStorage.setItem('links', JSON.stringify(links))
 }
 
+const descItem = document.querySelector('.task_item_desc');
+
+const linkGenerator = () => {
+    let linkTitle = titleInput.value;
+    let link = linkInput.value;
+    taskItem.insertAdjacentHTML('beforebegin',`<a href='${link}'>${linkTitle}</a> </br>`);
+    console.log('hello')
+}
+
 const itemGenerator = (title, index) => {
+    
     let linkTitle = titleInput.value;
     let link = linkInput.value;
     return `
         <div class="task_item">
-            <div class="task_item_desc"><div><a href='${link}'>${linkTitle}</a><br></div></div>  
+            <div class="task_item_desc"><a href='${link}'>${linkTitle}</a></div>  
                 <div class="item_menu">
                     <input class="item_complete" type="checkbox">
                     <button class="item_edit" type="button"><img src="img/edit.png"></button>
@@ -55,10 +65,13 @@ const addHtml = () => {
     }
 }
     
+addHtml();
 
 function pushItem() {
     titles.push(new Title(titleInput.value));
     links.push(new Link(linkInput.value));
+    linkGenerator();
+    itemGenerator();
     local();
     addHtml();
 }
