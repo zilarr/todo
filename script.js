@@ -30,7 +30,6 @@ const local = () => {
     localStorage.setItem('links', JSON.stringify(links))
 }
 
-const descItem = document.querySelector('.task_item_desc');
 
 const itemGenerator = (title, index) => {
     let linkTitle = titleInput.value;
